@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive resume cv</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Van Tuan PHAM's CV</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home nav__icon' ></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#profile" class="nav__link">
+                                <i class='bx bx-user nav__icon' ></i>Profile
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link">
+                                <i class='bx bx-book nav__icon' ></i>Education
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-receipt nav__icon' ></i>Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">
+                                <i class='bx bx-briefcase-alt nav__icon' ></i>Experience
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#certificates" class="nav__link">
+                                <i class='bx bx-award nav__icon' ></i>Certificates
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#references" class="nav__link">
+                                <i class='bx bx-link-external nav__icon' ></i>References
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main bd-container">
+            <!-- All elements within this div, is generated in PDF -->
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <!--========== HOME ==========-->
+                    <section class="home" id="home">
+                        <div class="home__container section bd-grid">
+                            <div class="home__data bd-grid">
+                                <img src="assets/img/avatar.jpg" alt="" class="home__img">
+
+                                <h1 class="home__title">Van Tuan <b>PHAM</b></h1>
+                                <h3 class="home__profession">Machine learning researcher</h3>
+
+                                <div>
+                                    <!-- Button to download your CV saved in the pdf folder. Available for mobile -->
+                                    <a download="" href="assets/pdf/Pham_ResumeCv.pdf" class="home__button-movil">Dowload Cv</a>
+                                </div>
+                            </div>   
+    
+    
+                            <div class="home__address bd-grid">
+                                <span class="home__information">
+                                    <i class='bx bx-map home__icon' ></i> Av. Plantières #68, Metz - France
+                                </span>
+                                <span class="home__information">
+                                    <i class='bx bx-envelope home__icon' ></i> phamtuantkt@gmail.com
+                                </span>
+                                <span class="home__information">
+                                    <i class='bx bx-phone home__icon' ></i> +33 749-818-545
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Theme change button -->
+                        <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
+                        <!-- Button to generate and download the pdf. Available for desktop. -->
+                        <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+                    </section>
+
+                    
+                    <!--========== EDUCATION ==========-->
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Education</h2>
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                     <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">PhD of Computer Science</h3>
+                                    <span class="education__studies">University of Lorraine, France</span>
+                                    <span class="education__year">2020 - 2023</span>
+                                </div>
+                            </div>
+
+
+                        <div class="education__container bd-grid">
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Master of ICT</h3>
+                                    <span class="education__studies">University of Lorraine, France and (co-accredited)
+                                        University of Science and Technology of Hanoi (USTH), Vietnam </span>
+                                    <span class="education__year">2015 - 2017</span>
+                                </div>
+                            </div>
+
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                </div>
+                                
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Bachelor of MIS</h3>
+                                    <span class="education__studies">National Economic University, Vietnam</span>
+                                    <span class="education__year">2018 - 2012</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!--========== SKILLS  ==========-->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Skills</h2>
+
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Machine/Deep Learning
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Data/Feature Engineering
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> NLP/LLMs/Quantization
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Promt engineering
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Python/Pytorch
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Sklearn/Pandas
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Independent Research
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Problem solving
+                                </li>
+                            </ul>
+                            
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Django FullStack-Web
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Github/Docker
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Linux/Bash
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> MySQL/MSSQL
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> RestfulAPI
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Agile/Scrum
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Continuous Learning
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+
+                    <!--========== SOCIAL ==========-->
+                    <section class="social section">
+                        <h2 class="section-title">SOCIAL</h2>
+
+                        <div class="social__container bd-grid">
+                            <a href="https://www.linkedin.com/in/tuanpham1989/" target="_blank" class="social__link">
+                                <i class='bx bxl-linkedin-square social__icon'></i>
+                                @tuanpham1989
+                            </a>
+                            <a href="https://www.facebook.com/tuanphamneu" target="_blank" class="social__link">
+                                <i class='bx bxl-facebook social__icon'></i>
+                                @tuanphamneu
+                            </a>
+                            <a href="https://github.com/danielphamvt" target="_blank" class="social__link">
+                                <i class='bx bxl-github social__icon'></i>
+                                @danielphamvt
+                            </a>
+                        </div>
+                    </section>
+
+
+<!--                    &lt;!&ndash;========== PROFILE ==========&ndash;&gt;-->
+<!--                    <section class="profile section" id="profile">-->
+<!--                        <h2 class="section-title">Profile</h2>-->
+<!--                        <p class="profile__description">I am a passionate and experienced Python programmer with a deep-->
+<!--                        interest in AI, contributing to numerous ML projects and continuously updating my skills with the latest advancements.-->
+<!--                        </p>-->
+<!--                    </section>-->
+                </div>
+
+                <div class="resume__right">
+
+                    <!--========== EXPERIENCE ==========-->
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title">Experience</h2>
+
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Post doctoral<span class="experience__company"> From Nov 2023 to Jun 2024 | LCOMS-Uni. Lorraine</span></h3>
+
+                                    <p class="experience__description">Work on DCASOLVERS project.</p>
+                                </div>
+                            </div>
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">PhD. candidate<span class="experience__company"> From 2020 to 2023 | LGIPM - Uni. Lorraine</span></h3>
+
+                                    <p class="experience__description">Thesis: <em>"New Machine Learning Techniques for
+                                        Finance and Healthcare."</em></p>
+                                </div>
+                            </div>
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                     <span class="experience__line"></span>
+                                </div>
+                                
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">University Lecturer<span class="experience__company"> From 2012 to 2020 | National Economics University</span></h3>
+
+                                    <p class="experience__description">Teaching information technology courses and conducting research in Machine learning.</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                     <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Data Engineer and Web Developer<span class="experience__company"> Aug 2019 to Dec 2019 | VinTech - VinGroup, Vietnam</span></h3>
+
+                                    <p class="experience__description">Engaged in the implementation of an AI-based Logistics system with Django, Boostrap, GoogleMap APIs.</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                     <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">AI Leader<span class="experience__company"> Mar 2018 to Dec 2019 | NAL Jsc. Vietnam</span></h3>
+
+                                    <p class="experience__description">Worked in a young and passionate team, built
+                                        AI-based applications for various outsourcing projects such as Operator Chatbot,
+                                        Face Recognition for door lock system, Dialog System, and Social Sentiment Analysis.</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                     <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">AI Engineer<span class="experience__company"> Nov 2016 to Feb 2017 | Chappiebot Jsc., Vietnam</span></h3>
+
+                                    <p class="experience__description">Developed clever algorithms and pragmatic solutions
+                                        for an AI-Based car search system: Named Entity Recognition, Topics classifiers,
+                                        Sentiment Analysis applications, and Dialogue Systems in Vietnamese.</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">AI Internship<span class="experience__company"> Apr 2016 to Sep 2016 | LITA, Uni. Lorraine, France</span></h3>
+
+                                    <p class="experience__description">Thesis: <em>"Machine learning techniques for Autonomous Surface Vessels".</em>
+                    This project aimed to conduct research on long-term autonomy and data acquisition for environmental
+                    monitoring using machine learning techniques.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+                    <!--========== Publications ==========-->
+                    <section class="publication section" id="Publication">
+                        <h2 class="section-title">Publication</h2>
+
+                        <div class="publication__container bd-grid">
+                            <div class="publication__content">
+                                <h5 class="publication__title">A Block Coordinate DCA Approach for Large-Scale Kernel SVM</h5>
+                                <p><em>Pham, V.T., Luu, H.P.H., Le Thi, H.A. (2022)</em>
+                                    In: Nguyen, N.T., Manolopoulos, Y., Chbeir, R., Kozierkiewicz, A., Trawiński, B. (eds)
+                                    Computational Collective Intelligence. ICCCI 2022. Lecture Notes in Computer Science, vol 13501.
+                                    Springer, Cham.</p>
+                            </div>
+                            <div class="certificate__content">
+                                <h5 class="certificate__title">DCA-Based Weighted Bagging: A New Ensemble Learning Approach.</h5>
+                                <p><em>Pham, V.T., Le Thi, H.A., Luu, H.P.H., Damel, P. (2023)</em>
+                                In: Nguyen, N.T., et al. Intelligent Information and Database Systems. ACIIDS 2023.
+                                    Lecture Notes in Computer Science, vol 13996. Springer, Singapore.</p>
+                            </div>
+<!--                            <div class="certificate__content">-->
+<!--                                <h5 class="certificate__title">Cost-sensitive Weighted Bagging DCA Based Method for Imbalanced Financial Data</h5>-->
+<!--                                <p><em>Pham, V.T., Le Thi, H.A., Pascal, D. (2023)</em>-->
+<!--                                Submitted, In: Proceedings of the 4th International Conference and Summer School on Numerical-->
+<!--                                    Computations</p>-->
+<!--                            </div>-->
+                        </div>
+                    </section>
+
+<!--                    &lt;!&ndash;========== CERTIFICATES ==========&ndash;&gt;-->
+<!--                    <section class="certificate section" id="certificates">-->
+<!--                        <h2 class="section-title">Certificates</h2>-->
+
+<!--                        <div class="certificate__container bd-grid">-->
+<!--                            <div class="certificate__content">-->
+<!--                                <h3 class="certificate__title">Certified for compliance in the work area (2012)</h3>-->
+<!--                                <p class="certificate__description">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>-->
+<!--                            </div>-->
+
+<!--                            <div class="certificate__content">-->
+<!--                                <h3 class="certificate__title">Certificate of attendance on computer technology.</h3>-->
+<!--                                <p class="certificate__description">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>-->
+<!--                            </div>-->
+
+<!--                            <div class="certificate__content">-->
+<!--                                <h3 class="certificate__title">Achievement medal for productivity excellence during the year (2019)</h3>-->
+<!--                                <p class="certificate__description">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </section>-->
+
+                    <!--========== REFERENCES ==========-->
+<!--                    <section class="references section" id="references">-->
+<!--                        <h2 class="section-title">References</h2>-->
+
+<!--                        <div class="references__container bd-grid">-->
+<!--                            <div class="references__content bd-grid">-->
+<!--                                <span class="references__subtitle">Sr. Director</span>-->
+<!--                                <h3 class="references__title">Mr. Clay Doe</h3>-->
+<!--                                <ul class="references__contact">-->
+<!--                                    <li>Phone: 999-888-777</li>-->
+<!--                                    <li>Email: user@email.com</li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+
+<!--                            <div class="references__content bd-grid">-->
+<!--                                <span class="references__subtitle">Mag. Developer</span>-->
+<!--                                <h3 class="references__title">Mr. Robbinson Bass</h3>-->
+<!--                                <ul class="references__contact">-->
+<!--                                    <li>Phone: 999-888-777</li>-->
+<!--                                    <li>Email: user@email.com</li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </section>-->
+
+                    <!--========== LANGUAGES ==========-->
+<!--                    <section class="languages section">-->
+<!--                        <h2 class="section-title">Languages</h2>-->
+
+<!--                        <div class="languages__container">-->
+<!--                            <ul class="languages__content bd-grid">-->
+<!--                                <li class="languages__name">-->
+<!--                                    <span class="languages__circle"></span>Vietnamese (Native)-->
+<!--                                </li>-->
+<!--                                <li class="languages__name">-->
+<!--                                    <span class="languages__circle"></span>English (Proficient)-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </section>-->
+<!--                        -->
+
+<!--                    &lt;!&ndash;========== INTERESTS ==========&ndash;&gt;-->
+<!--                    <section class="interests section">-->
+<!--                        <h2 class="section-title">Interests</h2>-->
+
+<!--                        <div class="interests__container bd-grid">-->
+<!--                            <div class="interests__content">-->
+<!--                                <i class='bx bx-run interests__icon' ></i>-->
+<!--                                <span class="interests__name">Running</span>-->
+<!--                            </div>-->
+<!--                            <div class="interests__content">-->
+<!--                                <i class='bx bx-headphone interests__icon'></i>-->
+<!--                                <span class="interests__name">Music</span>-->
+<!--                            </div>-->
+<!--                            <div class="interests__content">-->
+<!--                                <i class='bx bxs-plane-alt interests__icon'></i>-->
+<!--                                <span class="interests__name">Travel</span>-->
+<!--                            </div>-->
+<!--                            <div class="interests__content">-->
+<!--                                <i class='bx bxs-book interests__icon' ></i>-->
+<!--                                <span class="interests__name">Read</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </section>-->
+                </div>
+            </div>
+        </main>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+
+        
+        <!--========== HTML2PDF ==========-->
+        <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal page - PHAM Van Tuan</title>
+    <script>
+        // Check if the user is on a mobile device
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+
+        // Redirect based on the device type
+        function redirectBasedOnDevice() {
+            if (isMobileDevice()) {
+                window.location.href = 'en.html';
+            } else {
+                window.location.href = 'cv_mobile.html';
+            }
+        }
+
+        // Call the redirection function when the page loads
+        window.onload = redirectBasedOnDevice;
+    </script>
+</head>
+<body>
+</body>
+</html>
